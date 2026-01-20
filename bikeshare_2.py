@@ -27,7 +27,7 @@ def get_filters():
         city = city.lower()
         
         # invalid input handling for city
-        if city not in ('new york city', 'chicago', 'washington'):
+        if city not in CITY_DATA.keys():
             print("Please enter a valid city.")
             continue
         else:
@@ -91,7 +91,7 @@ def load_data(city, month, day):
     
     # 3. extraction of month and day
     df['Month'] = df['Start Time'].dt.month
-    df['Weekday'] = df['Start Time'].dt.weekday
+    df['Weekday'] = df['Start Time'].dt.day_name()
     
     # 4. filtering of dataset, based on selections
     if month != 'all':
