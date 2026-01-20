@@ -72,3 +72,8 @@ Data and project information were kindly provided by [Udacity](https://www.udaci
 
 # Bikeshare Project Analysis
 
+
+## Data Sources
+
+The data for this project is provided by Motivate, a bike share system provider.
+
